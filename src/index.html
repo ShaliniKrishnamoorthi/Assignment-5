@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!--
+ Assignment 5 : Pop-up box and JQuery UI 
+ Author : Shalini Krishnamoorthi
+ File Name : index.html
+ Version 1 : 02/13/2015
+-->
+
+<html>
+    <head>
+        <title>Pop-up box & JQuery UI Assignment</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../css/styles.css" />
+        <link rel="stylesheet" href="../css/jquery-ui.min.css"> 
+ <!--   <script src="https://code.jquery.com/jquery-2.1.3.js"></script>
+		<script src="https://code.jquery.com/ui/1.11.3/jquery-ui.js"></script> -->
+        <script src="../js/jquery.js"></script>
+  		<script src="../js/jqueryui.js"></script> 
+    </head>
+    <body>
+
+		<div id="pop-up">
+			<section> Do u want to continue? </section>
+			<br><br>
+			<button type="submit" id="stayButton" name="Stay">Yes</button>
+			<button type="submit" id="leaveButton" name="Leave">No</button>
+		</div>
+		
+		<div id="widget_page">
+			<span id = "heading">JQUERY UI WIDGETS</span> 
+			<span>Time: <input type="text"  id="time" ></span>
+    		<span>Please select the date: <input type="text"  id="datepicker" ></span>
+			<br><hr>
+			
+			<h2> Please pick your color choices... </h2>
+			
+			<div id="accordion">
+				<h3> Background Color </h3>
+				 	<form>
+					 	<input name="background" type="radio" value="white" checked/> White <br/>
+					 	<input name="background" type="radio" value="black" /> Black <br/>
+					 	<input name="background" type="radio" value="grey" /> Grey <br/>
+					</form>
+				 <h3> Pop-up Prompt Color </h3>
+				 	<form>
+					 	<input name="prompt" type="radio" value="wheat" checked/> Wheat <br/>
+					 	<input name="prompt" type="radio" value="PaleGreen" /> Green <br/>
+					 	<input name="prompt" type="radio" value="white" /> White <br/>
+				 	</form>
+				 <h3> Progress Bar BG Color </h3>
+				 	<form>
+					 	<input name="progress" type="radio" value="LightGrey" /> Grey <br/>
+					 	<input name="progress" type="radio" value="white" checked/> White <br/>
+				 	</form>
+			</div>
+
+			<div id="progressbar">
+				<div id="progress-label">Loading...</div>
+			</div>
+
+		</div> <!-- widget_page -->
+	
+		<script type="text/javascript" src="../js/popup.js"> </script>
+	
+	</body>
+</html>
